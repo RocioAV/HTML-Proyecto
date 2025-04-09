@@ -1,0 +1,356 @@
+/* Variables específicas para la página de clases */
+:root {
+    --filter-active: var(--primary-color);
+    --filter-inactive: #e0e0e0;
+    --schedule-header-bg: var(--dark-color);
+    --schedule-cell-bg: white;
+    --schedule-cell-hover: #f5f5f5;
+}
+
+/* Style for radio inputs */
+input[type="radio"] {
+    display: none; /* Hide the radio buttons */
+}
+
+/* Style for labels */
+.filtros label {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 5rem;
+}
+
+/* Style for labels when the corresponding radio input is checked */
+input[type="radio"]:checked + label {
+    background-color: #007bff;
+    color: white;
+}
+
+/* Hover effect for labels */
+.filtros label:hover {
+    background-color: #e0e0e0;
+}
+
+
+/* Galería Masonry */
+.masonry-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-auto-rows: masonry;
+    gap: 2rem;
+    padding: 2rem 0;
+}
+
+.class-card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    opacity: 1;
+    transform: scale(1);
+    height: auto;
+}
+
+/* Efectos de filtro con CSS puro */
+.galeria-clases {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    font-family: sans-serif;
+}
+
+.filtros {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.filtros label {
+    background-color: #ddd;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+input[type="radio"]:checked+label {
+    background-color: #333;
+    color: white;
+}
+
+/* Galería masonry */
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1rem;
+}
+
+.tarjeta {
+    background: #f5f5f5;
+    padding: 1rem;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+/* Mostrar todo por defecto */
+#filtro-todos:checked~.galeria .tarjeta {
+    display: block;
+}
+
+/* Ocultar tarjetas que no coincidan con el filtro */
+#filtro-musculacion:checked~.galeria .tarjeta:not(.musculacion),
+#filtro-crossfit:checked~.galeria .tarjeta:not(.crossfit),
+#filtro-yoga:checked~.galeria .tarjeta:not(.yoga),
+#filtro-spinning:checked~.galeria .tarjeta:not(.spinning) {
+    display: none;
+}
+
+/* Mostrar solo las tarjetas que coincidan */
+#filtro-musculacion:checked~.galeria .tarjeta.musculacion,
+#filtro-crossfit:checked~.galeria .tarjeta.crossfit,
+#filtro-yoga:checked~.galeria .tarjeta.yoga,
+#filtro-spinning:checked~.galeria .tarjeta.spinning {
+    display: block;
+}
+
+
+
+/* Estilos de las tarjetas */
+.card-image {
+    position: relative;
+    height: 250px;
+    overflow: hidden;
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+}
+
+.card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.7));
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+}
+
+.card-badge {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 0.3rem 1rem;
+    border-radius: 50px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.card-content {
+    padding: 1.5rem;
+}
+
+.card-content h3 {
+    color: var(--primary-color);
+    margin-bottom: 0.8rem;
+    font-size: 1.4rem;
+}
+
+.card-content p {
+    color: var(--text-light);
+    margin-bottom: 1.2rem;
+    line-height: 1.5;
+}
+
+.card-meta {
+    display: flex;
+    gap: 1.5rem;
+    font-size: 0.9rem;
+    color: var(--text-light);
+}
+
+.card-meta span {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+/* Efectos hover */
+.class-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.class-card:hover .card-image img {
+    transform: scale(1.1);
+}
+
+.class-card:hover .image-overlay {
+    opacity: 0.4;
+}
+
+/* Horarios Responsivos */
+.schedule-section {
+    background-color: var(--light-color);
+    padding: 4rem 0;
+}
+
+.schedule-container {
+    overflow-x: auto;
+    margin-top: 2rem;
+    -webkit-overflow-scrolling: touch;
+}
+
+.schedule-table {
+    display: grid;
+    grid-template-columns: minmax(100px, auto) repeat(6, 1fr);
+    min-width: 800px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.schedule-header {
+    display: contents;
+}
+
+.schedule-header>div {
+    background-color: var(--schedule-header-bg);
+    color: white;
+    padding: 1.2rem;
+    text-align: center;
+    font-weight: bold;
+    position: sticky;
+    top: 0;
+}
+
+.schedule-body {
+    display: contents;
+}
+
+.schedule-row {
+    display: contents;
+}
+
+.schedule-row>div {
+    padding: 1rem;
+    background-color: var(--schedule-cell-bg);
+    border-bottom: 1px solid #eee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.schedule-row .time {
+    font-weight: bold;
+    background-color: #f9f9f9;
+}
+
+.schedule-row .class {
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.schedule-row .class:hover {
+    background-color: var(--schedule-cell-hover);
+    transform: scale(1.05);
+    z-index: 1;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.schedule-row .class::after {
+    content: '';
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+}
+
+.schedule-row .crossfit {
+    color: #e74c3c;
+}
+
+.schedule-row .crossfit::after {
+    background-color: #e74c3c;
+}
+
+.schedule-row .yoga {
+    color: #2ecc71;
+}
+
+.schedule-row .yoga::after {
+    background-color: #2ecc71;
+}
+
+.schedule-row .musculacion {
+    color: #3498db;
+}
+
+.schedule-row .musculacion::after {
+    background-color: #3498db;
+}
+
+.schedule-row .spinning {
+    color: #9b59b6;
+}
+
+.schedule-row .spinning::after {
+    background-color: #9b59b6;
+}
+[data-theme="dark"]  {
+    background-color: rgb(63, 63, 63);
+}
+[data-theme="dark"] .time  {
+    color: rgb(3, 3, 3);
+}
+[data-theme="dark"] label  {
+    color: rgb(3, 3, 3);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .filters {
+        justify-content: center;
+    }
+
+    .masonry-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .class-card {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .filters label {
+        padding: 0.6rem 1rem;
+        font-size: 0.9rem;
+    }
+
+    .card-image {
+        height: 200px;
+    }
+}

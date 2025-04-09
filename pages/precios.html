@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PowerGym - Nuestros Planes</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/precios.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="/index.html" class="logo">
+                <i class="fas fa-dumbbell"></i> PowerGym
+            </a>
+
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="/index.html" class="active">Inicio</a></li>
+                    <!-- Mega Menú Clases -->
+                    <li class="mega-menu-item">
+                        <a href="clases.html">Clases <i class="fas fa-chevron-down"></i></a>
+                        <div class="mega-menu">
+                            <div class="mega-menu-container">
+                                <div class="mega-menu-column">
+                                    <h4>Tipos de Clases</h4>
+                                    <ul>
+                                        <li><a href="#"><i class="fas fa-fire"></i> CrossFit</a></li>
+                                        <li><a href="#"><i class="fas fa-spa"></i> Yoga</a></li>
+                                        <li><a href="#"><i class="fas fa-dumbbell"></i> Musculación</a></li>
+                                        <li><a href="#"><i class="fas fa-bicycle"></i> Spinning</a></li>
+                                        <li><a href="#"><i class="fas fa-running"></i> Funcional</a></li>
+                                        <li><a href="#"><i class="fas fa-water"></i> Natación</a></li>
+                                    </ul>
+                                </div>
+                                <div class="mega-menu-column">
+                                    <h4>Horarios</h4>
+                                    <ul>
+                                        <li><a href="#"><i class="far fa-clock"></i> Mañana (6:00-12:00)</a></li>
+                                        <li><a href="#"><i class="fas fa-clock"></i> Tarde (14:00-19:00)</a></li>
+                                        <li><a href="#"><i class="far fa-moon"></i> Noche (20:00-23:00)</a></li>
+                                        <li><a href="#"><i class="fas fa-calendar-alt"></i> Horario Completo</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li><a href="entrenadores.html">Entrenadores</a></li>
+                    <li><a href="precios.html">Precios</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                </ul>
+            </nav>
+
+            <button class="mobile-menu-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <main class="pricing-page">
+        <section class="pricing-intro">
+            <div class="container">
+                <h1>Elige tu <span>Plan Perfecto</span></h1>
+                <p class="subtitle">Encuentra la membresía que se adapte a tus necesidades fitness</p>
+                
+                <!-- Toggle Mensual/Anual -->
+                <div class="pricing-toggle">
+                    <span>Mensual</span>
+                    <label class="toggle-switch">
+                        <input type="checkbox" id="pricingToggle">
+                        <span class="slider"></span>
+                    </label>
+                    <span>Anual <small>(20% de descuento)</small></span>
+                </div>
+            </div>
+        </section>
+
+        <section class="pricing-plans">
+            <div class="container">
+                <div class="pricing-grid">
+                    <!-- Plan Básico -->
+                    <div class="pricing-card">
+                        <div class="pricing-header">
+                            <h3>Básico</h3>
+                            <div class="price monthly-price">
+                                <span class="currency">$</span>
+                                <span class="amount">29</span>
+                                <span class="period">/mes</span>
+                            </div>
+                            <div class="price yearly-price hidden">
+                                <span class="currency">$</span>
+                                <span class="amount">23</span>
+                                <span class="period">/mes</span>
+                                <small class="billing-info">Facturado anualmente ($276)</small>
+                            </div>
+                            <p class="plan-description">Perfecto para empezar tu viaje fitness</p>
+                        </div>
+                        <div class="pricing-features">
+                            <ul>
+                                <li>
+                                    <i class="fas fa-check"></i> Acceso a zona de musculación
+                                    <span class="tooltip">Incluye uso de máquinas y pesas libres</span>
+                                </li>
+                                <li>
+                                    <i class="fas fa-check"></i> 2 clases grupales por semana
+                                    <span class="tooltip">Elige entre nuestras clases básicas</span>
+                                </li>
+                                <li>
+                                    <i class="fas fa-check"></i> Acceso a locker
+                                    <span class="tooltip">Uso diario de casilleros (traer tu candado)</span>
+                                </li>
+                                <li>
+                                    <i class="fas fa-times"></i> Entrenador personal
+                                    <span class="tooltip">No incluye sesiones con entrenador</span>
+                                </li>
+                                <li>
+                                    <i class="fas fa-times"></i> Piscina y sauna
+                                    <span class="tooltip">Disponible en planes superiores</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="pricing-footer">
+                            <a href="#" class="btn btn-outline">Elegir Plan</a>
+                        </div>
+                    </div>
+
+                    <!-- Plan Estándar (Recomendado) -->
+                    <div class="pricing-card featured">
+                        <div class="featured-badge">¡Más Popular!</div>
+                        <div class="pricing-header">
+                            <h3>Estándar</h3>
+                            <div class="price monthly-price">
+                                <span class="currency">$</span>
+                                <span class="amount">49</span>
+                                <span class="period">/mes</span>
+                            </div>
+                            <div class="price yearly-price hidden">
+                                <span class="currency">$</span>
+                                <span class="amount">39</span>
+                                <span class="period">/mes</span>
+                                <small class="billing-info">Facturado anualmente ($468)</small>
+                            </div>
+                            <p class="plan-description">Ideal para entrenamiento regular</p>
+                        </div>
+                        <div class="pricing-features">
+                            <ul>
+                                <li>
+                                    <i class="fas fa-check"></i> Acceso ilimitado a todas las áreas
+                                    <span class="tooltip">Musculación, cardio, clases grupales</span>
+                                </li>
+                                <li>
+                                    <i class="fas fa-check"></i> Clases grupales ilimitadas
+                                    <span class="tooltip">Participa en todas las clases que quieras</span>
+                                </li>
+                                <li>
+                                    <i class="fas fa-check"></i> Acceso a piscina
+                                    <span class="tooltip">Uso de la piscina 3 veces por semana</span>
+                                </li>
+                                <li>
+                                    <i class="fas fa-check"></i> 1 sesión con entrenador/mes
+                                    <span class="tooltip">Sesión de 30 minutos para ajustar tu rutina</span>
+                                </li>
+                                <li>
+                                    <i class="fas fa-times"></i> Acceso ilimitado a sauna
+                                    <span class="tooltip">Disponible en el plan Premium</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="pricing-footer">
+                            <a href="#" class="btn btn-primary">Elegir Plan</a>
+                        </div>
+                    </div>
+
+                    <!-- Plan Premium -->
+                    <div class="pricing-card">
+                        <div class="pricing-header">
+                            <h3>Premium</h3>
+                            <div class="price monthly-price">
+                                <span class="currency">$</span>
+                                <span class="amount">79</span>
+                                <span class="period">/mes</span>
+                            </div>
+                            <div class="price yearly-price hidden">
+                                <span class="currency">$</span>
+                                <span class="amount">63</span>
+                                <span class="period">/mes</span>
+                                <small class="billing-info">Facturado anualmente ($756)</small>
+                            </div>
+                            <p class="plan-description">Experiencia fitness completa</p>
+                        </div>
+                        <div class="pricing-features">
+                            <ul>
+                                <li>
+                                    <i class="fas fa-check"></i> Acceso ilimitado a todas las áreas
+                                    <span class="tooltip">Incluye todas las instalaciones</span>
+                                </li>
+                                <li>
+                                    <i class="fas fa-check"></i> Clases premium ilimitadas
+                                    <span class="tooltip">Incluye clases exclusivas VIP</span>
+                                </li>
+                                <li>
+                                    <i class="fas fa-check"></i> Piscina y sauna ilimitados
+                                    <span class="tooltip">Acceso sin restricciones</span>
+                                </li>
+                                <li>
+                                    <i class="fas fa-check"></i> 4 sesiones con entrenador/mes
+                                    <span class="tooltip">Sesiones personalizadas de 45 minutos</span>
+                                </li>
+                                <li>
+                                    <i class="fas fa-check"></i> Toalla y locker premium incluidos
+                                    <span class="tooltip">Servicio de toallas y casillero asignado</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="pricing-footer">
+                            <a href="#" class="btn btn-outline">Elegir Plan</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="pricing-footer-note">
+                    <p>¿Necesitas algo más personalizado? <a href="contacto.html">Contáctanos</a> para crear un plan a tu medida.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h3>PowerGym</h3>
+                    <p>Transformando vidas a través del fitness desde 2015.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Contacto</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> Av. Siempre Viva 123</li>
+                        <li><i class="fas fa-phone"></i> +54 388 1234567</li>
+                        <li><i class="fas fa-envelope"></i> info@powergym.com</li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Newsletter</h3>
+                    <p>Suscríbete para recibir promociones y consejos fitness.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Tu correo electrónico" required>
+                        <button type="submit" class="btn btn-primary">Suscribirse</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mapa Interactivo -->
+        <div class="footer-map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3620.123456789012!2d-65.12345678901234!3d-24.123456789012345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjTCsDA3JzI0LjQiUyA2NcKwMDcnMTIuNCJX!5e0!3m2!1ses!2sar!4v1234567890123!5m2!1ses!2sar"
+                width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2025 PowerGym. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+    <div class="theme-switch-wrapper">
+        <label class="theme-switch" for="checkbox">
+            <input type="checkbox" id="checkbox" />
+            <div class="slider"></div>
+        </label>
+    </div>
+
+    <script src="/js/main.js"></script>
+    <script src="/js/precios.js"></script>
+</body>
+</html>

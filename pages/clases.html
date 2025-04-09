@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PowerGym - Nuestras Clases</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/clases.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="/index.html" class="logo">
+                <i class="fas fa-dumbbell"></i> PowerGym
+            </a>
+
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="/index.html" class="active">Inicio</a></li>
+                    <!-- Mega Menú Clases -->
+                    <li class="mega-menu-item">
+                        <a href="clases.html">Clases <i class="fas fa-chevron-down"></i></a>
+                        <div class="mega-menu">
+                            <div class="mega-menu-container">
+                                <div class="mega-menu-column">
+                                    <h4>Tipos de Clases</h4>
+                                    <ul>
+                                        <li><a href="#"><i class="fas fa-fire"></i> CrossFit</a></li>
+                                        <li><a href="#"><i class="fas fa-spa"></i> Yoga</a></li>
+                                        <li><a href="#"><i class="fas fa-dumbbell"></i> Musculación</a></li>
+                                        <li><a href="#"><i class="fas fa-bicycle"></i> Spinning</a></li>
+                                        <li><a href="#"><i class="fas fa-running"></i> Funcional</a></li>
+                                        <li><a href="#"><i class="fas fa-water"></i> Natación</a></li>
+                                    </ul>
+                                </div>
+                                <div class="mega-menu-column">
+                                    <h4>Horarios</h4>
+                                    <ul>
+                                        <li><a href="#"><i class="far fa-clock"></i> Mañana (6:00-12:00)</a></li>
+                                        <li><a href="#"><i class="fas fa-clock"></i> Tarde (14:00-19:00)</a></li>
+                                        <li><a href="#"><i class="far fa-moon"></i> Noche (20:00-23:00)</a></li>
+                                        <li><a href="#"><i class="fas fa-calendar-alt"></i> Horario Completo</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li><a href="entrenadores.html">Entrenadores</a></li>
+                    <li><a href="precios.html">Precios</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                </ul>
+            </nav>
+
+            <button class="mobile-menu-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <main class="classes-page">
+        <!-- Sección de Filtros -->
+        <div class="galeria-clases">
+            <!-- Filtros (inputs ocultos + etiquetas) -->
+            <input type="radio" name="filtro" id="filtro-todos" checked>
+            <input type="radio" name="filtro" id="filtro-musculacion">
+            <input type="radio" name="filtro" id="filtro-crossfit">
+            <input type="radio" name="filtro" id="filtro-yoga">
+            <input type="radio" name="filtro" id="filtro-spinning">
+
+            <!-- Etiquetas como botones -->
+            <div class="filtros">
+                <label for="filtro-yoga">🧘 Yoga</label>
+                <label for="filtro-spinning">🚴 Spinning</label>
+                <label for="filtro-crossfit">💪 Crossfit</label>
+                <label for="filtro-musculacion">🏋️ Musculación</label>
+                <label for="filtro-todos">⭐ Todas</label>
+            </div>
+
+            <!-- Galería -->
+            <div class="galeria">
+                <div class="tarjeta musculacion">
+                    <article class="class-card musculacion">
+                        <div class="card-image">
+                            <img src="https://images.pexels.com/photos/703012/pexels-photo-703012.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                alt="Clase de Musculación">
+                            <div class="image-overlay"></div>
+                            <div class="card-badge">Fuerza</div>
+                        </div>
+                        <div class="card-content">
+                            <h3>Musculación</h3>
+                            <p>Desarrolla tu fuerza y masa muscular con nuestro programa personalizado.</p>
+                            <div class="card-meta">
+                                <span><i class="fas fa-clock"></i> 50 min</span>
+                                <span><i class="fas fa-user-friends"></i> 1-5</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="tarjeta crossfit">
+                    <article class="class-card crossfit">
+                        <div class="card-image">
+                            <img src="https://images.pexels.com/photos/4853288/pexels-photo-4853288.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                alt="Clase de CrossFit">
+                            <div class="image-overlay"></div>
+                            <div class="card-badge">Intenso</div>
+                        </div>
+                        <div class="card-content">
+                            <h3>CrossFit</h3>
+                            <p>Entrenamiento funcional de alta intensidad que combina fuerza y resistencia.</p>
+                            <div class="card-meta">
+                                <span><i class="fas fa-clock"></i> 45 min</span>
+                                <span><i class="fas fa-user-friends"></i> 15-20</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="tarjeta yoga">
+                    <article class="class-card yoga">
+                        <div class="card-image">
+                            <img src="https://images.pexels.com/photos/25596680/pexels-photo-25596680/free-photo-of-active-woman-exercising-on-pilates-reformer.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                alt="Clase de Yoga">
+                            <div class="image-overlay"></div>
+                            <div class="card-badge">Relajante</div>
+                        </div>
+                        <div class="card-content">
+                            <h3>Yoga Integral</h3>
+                            <p>Mejora tu flexibilidad, equilibrio y conexión mente-cuerpo con técnicas ancestrales.</p>
+                            <div class="card-meta">
+                                <span><i class="fas fa-clock"></i> 60 min</span>
+                                <span><i class="fas fa-user-friends"></i> 10-15</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="tarjeta spinning">
+                    <article class="class-card spinning">
+                        <div class="card-image">
+                            <img src="https://imgs.search.brave.com/6aX3nuNyONbPw5wA7yEbLqQRjwtoVGxBNDaMCj48xN8/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzAzLzc5Lzg1Lzk4/LzM2MF9GXzM3OTg1/OTg1MV9QbmpDZVly/Q1AwVklyckJoVFpy/TXRCT2ZwdU9vWDVP/bi5qcGc"
+                                alt="Clase de Spinning">
+                            <div class="image-overlay"></div>
+                            <div class="card-badge">Cardio</div>
+                        </div>
+                        <div class="card-content">
+                            <h3>Spinning</h3>
+                            <p>Sesiones intensas en bicicleta fija para mejorar tu capacidad cardiovascular.</p>
+                            <div class="card-meta">
+                                <span><i class="fas fa-clock"></i> 45 min</span>
+                                <span><i class="fas fa-user-friends"></i> 15-25</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="tarjeta musculacion">
+                    <article class="class-card musculacion">
+                        <div class="card-image">
+                            <img src="https://images.pexels.com/photos/703012/pexels-photo-703012.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                alt="Clase de Musculación">
+                            <div class="image-overlay"></div>
+                            <div class="card-badge">Fuerza</div>
+                        </div>
+                        <div class="card-content">
+                            <h3>Musculación - Avanzados</h3>
+                            <p>Desarrolla tu fuerza y masa muscular. Solo alumnos avanzados.</p>
+                            <div class="card-meta">
+                                <span><i class="fas fa-clock"></i> 50 min</span>
+                                <span><i class="fas fa-user-friends"></i> 1-5</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="tarjeta yoga">
+                    <article class="class-card yoga">
+                        <div class="card-image">
+                            <img src="https://images.pexels.com/photos/25596680/pexels-photo-25596680/free-photo-of-active-woman-exercising-on-pilates-reformer.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                alt="Clase de Yoga">
+                            <div class="image-overlay"></div>
+                            <div class="card-badge">Relajante</div>
+                        </div>
+                        <div class="card-content">
+                            <h3>Yoga para Mujeres</h3>
+                            <p>Mejora tu flexibilidad, equilibrio, sé una contigo misma.</p>
+                            <div class="card-meta">
+                                <span><i class="fas fa-clock"></i> 60 min</span>
+                                <span><i class="fas fa-user-friends"></i> 10-15</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Horarios Responsivos -->
+        <section class="schedule-section">
+            <div class="container">
+                <h2>Horarios Semanales</h2>
+                <div class="schedule-container">
+                    <div class="schedule-table">
+                        <div class="schedule-header">
+                            <div>Hora</div>
+                            <div>Lunes</div>
+                            <div>Martes</div>
+                            <div>Miércoles</div>
+                            <div>Jueves</div>
+                            <div>Viernes</div>
+                            <div>Sábado</div>
+                        </div>
+
+                        <div class="schedule-body">
+                            <!-- Filas de horarios -->
+                            <div class="schedule-row">
+                                <div class="time">06:00</div>
+                                <div class="class crossfit">CrossFit</div>
+                                <div class="class musculacion">Musculación</div>
+                                <div class="class crossfit">CrossFit</div>
+                                <div class="class musculacion">Musculación</div>
+                                <div class="class crossfit">CrossFit</div>
+                                <div class="class yoga">Yoga</div>
+                            </div>
+                            <div class="schedule-row">
+                                <div class="time">07:00</div>
+                                <div class="class musculacion">Musculación</div>
+                                <div class="class yoga">Yoga</div>
+                                <div class="class musculacion">Musculación</div>
+                                <div class="class crossfit">CrossFit</div>
+                                <div class="class yoga">Yoga</div>
+                                <div class="class crossfit">CrossFit</div>
+                            </div>
+
+                            <div class="schedule-row">
+                                <div class="time">08:00</div>
+                                <div class="class crossfit">CrossFit</div>
+                                <div class="class musculacion">Musculación</div>
+                                <div class="class yoga">Yoga</div>
+                                <div class="class musculacion">Musculación</div>
+                                <div class="class crossfit">CrossFit</div>
+                                <div class="class musculacion">Musculación</div>
+                            </div>
+
+                            <div class="schedule-row">
+                                <div class="time">09:00</div>
+                                <div class="class yoga">Yoga</div>
+                                <div class="class crossfit">CrossFit</div>
+                                <div class="class musculacion">Musculación</div>
+                                <div class="class yoga">Yoga</div>
+                                <div class="class musculacion">Musculación</div>
+                                <div class="class crossfit">CrossFit</div>
+                            </div>
+
+                            <div class="schedule-row">
+                                <div class="time">10:00</div>
+                                <div class="class musculacion">Musculación</div>
+                                <div class="class musculacion">Musculación</div>
+                                <div class="class crossfit">CrossFit</div>
+                                <div class="class crossfit">CrossFit</div>
+                                <div class="class yoga">Yoga</div>
+                                <div class="class yoga">Yoga</div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Completo -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h3>PowerGym</h3>
+                    <p>Transformando vidas a través del fitness desde 2015.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Contacto</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> Av. Siempre Viva 123</li>
+                        <li><i class="fas fa-phone"></i> +54 388 1234567</li>
+                        <li><i class="fas fa-envelope"></i> info@powergym.com</li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Newsletter</h3>
+                    <p>Suscríbete para recibir promociones y consejos fitness.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Tu correo electrónico" required>
+                        <button type="submit" class="btn btn-primary">Suscribirse</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mapa Interactivo -->
+        <div class="footer-map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3620.123456789012!2d-65.12345678901234!3d-24.123456789012345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjTCsDA3JzI0LjQiUyA2NcKwMDcnMTIuNCJX!5e0!3m2!1ses!2sar!4v1234567890123!5m2!1ses!2sar"
+                width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2025 PowerGym. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="theme-switch-wrapper">
+        <label class="theme-switch" for="checkbox">
+            <input type="checkbox" id="checkbox" />
+            <div class="slider"></div>
+        </label>
+    </div>
+    <script src="/js/main.js"></script>
+    <script src="/js/clases.js"></script>
+</body>
+
+</html>

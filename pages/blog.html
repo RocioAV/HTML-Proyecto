@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PowerGym - Blog Fitness</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/blog.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="/index.html" class="logo">
+                <i class="fas fa-dumbbell"></i> PowerGym
+            </a>
+
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="/index.html" class="active">Inicio</a></li>
+                    <!-- Mega Menú Clases -->
+                    <li class="mega-menu-item">
+                        <a href="clases.html">Clases <i class="fas fa-chevron-down"></i></a>
+                        <div class="mega-menu">
+                            <div class="mega-menu-container">
+                                <div class="mega-menu-column">
+                                    <h4>Tipos de Clases</h4>
+                                    <ul>
+                                        <li><a href="#"><i class="fas fa-fire"></i> CrossFit</a></li>
+                                        <li><a href="#"><i class="fas fa-spa"></i> Yoga</a></li>
+                                        <li><a href="#"><i class="fas fa-dumbbell"></i> Musculación</a></li>
+                                        <li><a href="#"><i class="fas fa-bicycle"></i> Spinning</a></li>
+                                        <li><a href="#"><i class="fas fa-running"></i> Funcional</a></li>
+                                        <li><a href="#"><i class="fas fa-water"></i> Natación</a></li>
+                                    </ul>
+                                </div>
+                                <div class="mega-menu-column">
+                                    <h4>Horarios</h4>
+                                    <ul>
+                                        <li><a href="#"><i class="far fa-clock"></i> Mañana (6:00-12:00)</a></li>
+                                        <li><a href="#"><i class="fas fa-clock"></i> Tarde (14:00-19:00)</a></li>
+                                        <li><a href="#"><i class="far fa-moon"></i> Noche (20:00-23:00)</a></li>
+                                        <li><a href="#"><i class="fas fa-calendar-alt"></i> Horario Completo</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li><a href="entrenadores.html">Entrenadores</a></li>
+                    <li><a href="precios.html">Precios</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                </ul>
+            </nav>
+
+            <button class="mobile-menu-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <main class="blog-page">
+        <section class="blog-hero">
+            <div class="container">
+                <h1>Blog <span>Fitness</span></h1>
+                <p class="subtitle">Consejos, noticias y tendencias del mundo fitness</p>
+            </div>
+        </section>
+
+        <!-- Filtros por categorías -->
+        <section class="blog-filters">
+            <div class="container">
+                <div class="filter-group">
+                    <input type="radio" id="all-categories" name="category" checked>
+                    <label for="all-categories">Todos</label>
+                    
+                    <input type="radio" id="training" name="category">
+                    <label for="training">Entrenamiento</label>
+                    
+                    <input type="radio" id="nutrition" name="category">
+                    <label for="nutrition">Nutrición</label>
+                    
+                    <input type="radio" id="wellness" name="category">
+                    <label for="wellness">Bienestar</label>
+                    
+                    <input type="radio" id="news" name="category">
+                    <label for="news">Noticias</label>
+                </div>
+            </div>
+        </section>
+
+        <!-- Grid de artículos -->
+        <section class="blog-grid">
+            <div class="container">
+                <!-- Artículo Destacado -->
+                <article class="blog-card featured" data-category="training" data-scroll-reveal>
+                    <div class="card-image">
+                        <img src="https://imgs.search.brave.com/9mX49q0a5at4eeFcu1I06Wlme4M8TLlu__5OKP9pPYk/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/Y3JvbmljYWRlbHF1/aW5kaW8uY29tL2Zp/bGVzL25vdGljaWFz/LzIwMjUwMzE3MDcz/MjEwMC5qcGc" alt="Entrenamiento funcional">
+                        <div class="card-badge">Destacado</div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-meta">
+                            <span class="category training">Entrenamiento</span>
+                            <span class="date"><i class="far fa-calendar"></i> 15 Mayo 2023</span>
+                        </div>
+                        <h2><a href="#">Los beneficios del entrenamiento funcional para tu vida diaria</a></h2>
+                        <p class="excerpt">Descubre cómo el entrenamiento funcional puede mejorar no solo tu condición física sino también tu rendimiento en actividades cotidianas...</p>
+                        <div class="card-footer">
+                            <div class="author">
+                                <div class="author-avatar"></div>
+                                <span>Por Carlos Rodríguez</span>
+                            </div>
+                            <a href="#" class="read-more">Leer más <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Artículo Normal 1 -->
+                <article class="blog-card" data-category="nutrition" data-scroll-reveal>
+                    <div class="card-image">
+                        <img src="https://imgs.search.brave.com/cchlP971PoTmZoygCw48fZlxmorJNHi2lWpA_fc-bmA/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pY2hl/Zi5iYmNpLmNvLnVr/L2FjZS93cy82NDAv/YW16L3dvcmxkc2Vy/dmljZS9saXZlL2Fz/c2V0cy9pbWFnZXMv/MjAxNi8wMS8yMi8x/NjAxMjIxMjUyMTBf/ZGVzYXl1bm9fc2Fs/dWRhYmxlXzYyNHgz/NTFfdGhpbmtzdG9j/ay5qcGcud2VicA" alt="Alimentación saludable">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-meta">
+                            <span class="category nutrition">Nutrición</span>
+                            <span class="date"><i class="far fa-calendar"></i> 10 Mayo 2023</span>
+                        </div>
+                        <h2><a href="#">Guía completa de proteínas para el aumento muscular</a></h2>
+                        <p class="excerpt">Todo lo que necesitas saber sobre las proteínas: tipos, cantidades recomendadas y los mejores momentos para consumirlas...</p>
+                        <div class="card-footer">
+                            <div class="author">
+                                <div class="author-avatar" data-initial="AM"></div>
+                                <span>Por Ana Martínez</span>
+                            </div>
+                            <a href="#" class="read-more">Leer más <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- Sección de comentarios (ejemplo para un artículo) -->
+        <section class="comments-section">
+            <div class="container">
+                <h2>Comentarios <span>(3)</span></h2>
+                
+                <div class="comment-list">
+                    <!-- Comentario 1 -->
+                    <div class="comment" data-scroll-reveal>
+                        <div class="comment-avatar" data-initial="JP"></div>
+                        <div class="comment-content">
+                            <div class="comment-header">
+                                <h4>Juan Pérez</h4>
+                                <span class="comment-date">Hace 2 días</span>
+                                <div class="comment-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                            </div>
+                            <p>Excelente artículo, justo lo que necesitaba para complementar mi rutina. ¿Alguna recomendación específica para principiantes?</p>
+                            <button class="comment-reply">Responder</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Comentario 2 -->
+                    <div class="comment" data-scroll-reveal>
+                        <div class="comment-avatar" data-initial="RG"></div>
+                        <div class="comment-content">
+                            <div class="comment-header">
+                                <h4>Roberto Gómez</h4>
+                                <span class="comment-date">Hace 1 semana</span>
+                                <div class="comment-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                            <p>Llevo aplicando estos consejos un mes y he notado una gran diferencia en mi rendimiento. ¡Gracias por compartir!</p>
+                            <button class="comment-reply">Responder</button>
+                            
+                            <!-- Respuesta -->
+                            <div class="comment-reply-form">
+                                <div class="reply-avatar" data-initial="T"></div>
+                                <form>
+                                    <textarea placeholder="Escribe tu respuesta..."></textarea>
+                                    <button type="submit" class="btn btn-small">Enviar</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Formulario de comentarios -->
+                <form class="comment-form" data-scroll-reveal>
+                    <h3>Deja tu comentario</h3>
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <input type="text" placeholder="Nombre" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Email" required>
+                        </div>
+                        <div class="form-group full-width">
+                            <textarea placeholder="Tu comentario" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <select required>
+                                <option value="" disabled selected>Valoración</option>
+                                <option value="5">Excelente</option>
+                                <option value="4">Muy bueno</option>
+                                <option value="3">Bueno</option>
+                                <option value="2">Regular</option>
+                                <option value="1">Malo</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-primary">Enviar comentario</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h3>PowerGym</h3>
+                    <p>Transformando vidas a través del fitness desde 2015.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Contacto</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> Av. Siempre Viva 123</li>
+                        <li><i class="fas fa-phone"></i> +54 388 1234567</li>
+                        <li><i class="fas fa-envelope"></i> info@powergym.com</li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Newsletter</h3>
+                    <p>Suscríbete para recibir promociones y consejos fitness.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Tu correo electrónico" required>
+                        <button type="submit" class="btn btn-primary">Suscribirse</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mapa Interactivo -->
+        <div class="footer-map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3620.123456789012!2d-65.12345678901234!3d-24.123456789012345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjTCsDA3JzI0LjQiUyA2NcKwMDcnMTIuNCJX!5e0!3m2!1ses!2sar!4v1234567890123!5m2!1ses!2sar"
+                width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2025 PowerGym. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="theme-switch-wrapper">
+        <label class="theme-switch" for="checkbox">
+            <input type="checkbox" id="checkbox" />
+            <div class="slider"></div>
+        </label>
+    </div>
+    <script src="/js/main.js"></script>
+    <script src="/js/blog.js"></script>
+</body>
+</html>
