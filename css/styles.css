@@ -26,6 +26,10 @@
     background-color: rgb(63, 63, 63);
 
 }
+[data-theme="dark"]  .mega-menu {
+    background-color: rgb(63, 63, 63);
+
+}
 
 
 /* Reset y estilos base */
