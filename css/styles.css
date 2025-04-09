@@ -19,6 +19,13 @@
     --text-light: #b0b0b0;
     --shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
 }
+[data-theme="dark"]  .section-title {
+    color: rgb(0, 0, 0);
+}
+[data-theme="dark"]  .testimonial-content {
+    background-color: rgb(63, 63, 63);
+
+}
 
 
 /* Reset y estilos base */
