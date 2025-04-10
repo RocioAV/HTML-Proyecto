@@ -284,6 +284,21 @@ input:checked + .slider:before {
     color: rgb(255, 255, 255);
 }
 
+
+/* Ocultar precios anuales por defecto */
+.yearly-price {
+    display: none;
+}
+
+/* Mostrar precios anuales cuando el toggle está activado */
+.pricing-toggle-wrapper:has(#pricingToggle:checked) .monthly-price {
+    display: none;
+}
+
+.pricing-toggle-wrapper:has(#pricingToggle:checked) .yearly-price {
+    display: block;
+}
+
 /* Responsive */
 @media (max-width: 1024px) {
     .pricing-card.featured {
