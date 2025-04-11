@@ -12,14 +12,11 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     };
-    
-    // Comprobar elementos visibles al cargar
+
     revealOnScroll();
     
-    // Y al hacer scroll
     window.addEventListener('scroll', revealOnScroll);
     
-    // Sistema de respuestas a comentarios
     const replyButtons = document.querySelectorAll('.comment-reply');
     
     replyButtons.forEach(button => {

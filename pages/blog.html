@@ -69,77 +69,126 @@
         </section>
 
         <!-- Filtros por categorías -->
-        <section class="blog-filters">
-            <div class="container">
-                <div class="filter-group">
-                    <input type="radio" id="all-categories" name="category" checked>
-                    <label for="all-categories">Todos</label>
-                    
-                    <input type="radio" id="training" name="category">
-                    <label for="training">Entrenamiento</label>
-                    
-                    <input type="radio" id="nutrition" name="category">
-                    <label for="nutrition">Nutrición</label>
-                    
-                    <input type="radio" id="wellness" name="category">
-                    <label for="wellness">Bienestar</label>
-                    
-                    <input type="radio" id="news" name="category">
-                    <label for="news">Noticias</label>
+        <div class="blog-container">
+            <!-- Filtros -->
+            <input type="radio" name="filtro-blog" id="filtro-todos-blog" checked>
+            <input type="radio" name="filtro-blog" id="filtro-entrenamiento">
+            <input type="radio" name="filtro-blog" id="filtro-nutricion">
+            <input type="radio" name="filtro-blog" id="filtro-bienestar">
+            <input type="radio" name="filtro-blog" id="filtro-noticias">
+        
+            <div class="filtros-blog">
+                <label for="filtro-todos-blog" class="filter-btn all-btn">
+                    <i class="fas fa-star"></i> Todos
+                </label>
+                <label for="filtro-entrenamiento" class="filter-btn training-btn">
+                    <i class="fas fa-dumbbell"></i> Entrenamiento
+                </label>
+                <label for="filtro-nutricion" class="filter-btn nutrition-btn">
+                    <i class="fas fa-utensils"></i> Nutrición
+                </label>
+                <label for="filtro-bienestar" class="filter-btn wellness-btn">
+                    <i class="fas fa-heart"></i> Bienestar
+                </label>
+                <label for="filtro-noticias" class="filter-btn news-btn">
+                    <i class="fas fa-newspaper"></i> Noticias
+                </label>
+            </div>
+        
+            <!-- Grid de artículos -->
+            <div class="blog-grid">
+                <!-- Artículo Destacado -->
+                <div class="blog-card entrenamiento featured">
+                    <article class="card-article">
+                        <div class="card-image">
+                            <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Entrenamiento funcional">
+                            <div class="card-badge">Destacado</div>
+                            <div class="category-tag entrenamiento">Entrenamiento</div>
+                        </div>
+                        <div class="card-content">
+                            <div class="card-meta">
+                                <span class="date"><i class="far fa-calendar-alt"></i> 15 Mayo 2023</span>
+                                <span class="reading-time"><i class="far fa-clock"></i> 5 min lectura</span>
+                            </div>
+                            <h2><a href="#">Los beneficios del entrenamiento funcional para tu vida diaria</a></h2>
+                            <p class="excerpt">Descubre cómo el entrenamiento funcional puede mejorar no solo tu condición física sino también tu rendimiento en actividades cotidianas...</p>
+                            <div class="card-footer">
+                                <div class="author">
+                                    <div class="author-avatar" style="background-image: url('https://randomuser.me/api/portraits/men/32.jpg')"></div>
+                                    <div class="author-info">
+                                        <span class="author-name">Carlos Rodríguez</span>
+                                        <span class="author-title">Entrenador Certificado</span>
+                                    </div>
+                                </div>
+                                <a href="#" class="read-more-btn">
+                                    Leer más <i class="fas fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+        
+                <!-- Artículo Nutrición -->
+                <div class="blog-card nutricion">
+                    <article class="card-article">
+                        <div class="card-image">
+                            <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1453&q=80" alt="Alimentación saludable">
+                            <div class="category-tag nutricion">Nutrición</div>
+                        </div>
+                        <div class="card-content">
+                            <div class="card-meta">
+                                <span class="date"><i class="far fa-calendar-alt"></i> 10 Mayo 2023</span>
+                                <span class="reading-time"><i class="far fa-clock"></i> 7 min lectura</span>
+                            </div>
+                            <h2><a href="#">Guía completa de proteínas para el aumento muscular</a></h2>
+                            <p class="excerpt">Todo lo que necesitas saber sobre las proteínas: tipos, cantidades recomendadas y los mejores momentos para consumirlas...</p>
+                            <div class="card-footer">
+                                <div class="author">
+                                    <div class="author-avatar" style="background-image: url('https://randomuser.me/api/portraits/women/44.jpg')"></div>
+                                    <div class="author-info">
+                                        <span class="author-name">Ana Martínez</span>
+                                        <span class="author-title">Nutricionista Deportiva</span>
+                                    </div>
+                                </div>
+                                <a href="#" class="read-more-btn">
+                                    Leer más <i class="fas fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+        
+                <!-- Artículo Bienestar -->
+                <div class="blog-card bienestar">
+                    <article class="card-article">
+                        <div class="card-image">
+                            <img src="https://images.unsplash.com/photo-1545205597-3d9d02c29597?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Meditación">
+                            <div class="category-tag bienestar">Bienestar</div>
+                        </div>
+                        <div class="card-content">
+                            <div class="card-meta">
+                                <span class="date"><i class="far fa-calendar-alt"></i> 5 Mayo 2023</span>
+                                <span class="reading-time"><i class="far fa-clock"></i> 6 min lectura</span>
+                            </div>
+                            <h2><a href="#">Cómo la meditación puede mejorar tu rendimiento físico</a></h2>
+                            <p class="excerpt">La conexión mente-cuerpo es más importante de lo que crees. Descubre técnicas de meditación para deportistas...</p>
+                            <div class="card-footer">
+                                <div class="author">
+                                    <div class="author-avatar" style="background-image: url('https://randomuser.me/api/portraits/women/63.jpg')"></div>
+                                    <div class="author-info">
+                                        <span class="author-name">Lucía Fernández</span>
+                                        <span class="author-title">Especialista en Mindfulness</span>
+                                    </div>
+                                </div>
+                                <a href="#" class="read-more-btn">
+                                    Leer más <i class="fas fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
                 </div>
             </div>
-        </section>
-
-        <!-- Grid de artículos -->
-        <section class="blog-grid">
-            <div class="container">
-                <!-- Artículo Destacado -->
-                <article class="blog-card featured" data-category="training" data-scroll-reveal>
-                    <div class="card-image">
-                        <img src="https://imgs.search.brave.com/9mX49q0a5at4eeFcu1I06Wlme4M8TLlu__5OKP9pPYk/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/Y3JvbmljYWRlbHF1/aW5kaW8uY29tL2Zp/bGVzL25vdGljaWFz/LzIwMjUwMzE3MDcz/MjEwMC5qcGc" alt="Entrenamiento funcional">
-                        <div class="card-badge">Destacado</div>
-                    </div>
-                    <div class="card-content">
-                        <div class="card-meta">
-                            <span class="category training">Entrenamiento</span>
-                            <span class="date"><i class="far fa-calendar"></i> 15 Mayo 2023</span>
-                        </div>
-                        <h2><a href="#">Los beneficios del entrenamiento funcional para tu vida diaria</a></h2>
-                        <p class="excerpt">Descubre cómo el entrenamiento funcional puede mejorar no solo tu condición física sino también tu rendimiento en actividades cotidianas...</p>
-                        <div class="card-footer">
-                            <div class="author">
-                                <div class="author-avatar"></div>
-                                <span>Por Carlos Rodríguez</span>
-                            </div>
-                            <a href="#" class="read-more">Leer más <i class="fas fa-arrow-right"></i></a>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- Artículo Normal 1 -->
-                <article class="blog-card" data-category="nutrition" data-scroll-reveal>
-                    <div class="card-image">
-                        <img src="https://imgs.search.brave.com/cchlP971PoTmZoygCw48fZlxmorJNHi2lWpA_fc-bmA/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pY2hl/Zi5iYmNpLmNvLnVr/L2FjZS93cy82NDAv/YW16L3dvcmxkc2Vy/dmljZS9saXZlL2Fz/c2V0cy9pbWFnZXMv/MjAxNi8wMS8yMi8x/NjAxMjIxMjUyMTBf/ZGVzYXl1bm9fc2Fs/dWRhYmxlXzYyNHgz/NTFfdGhpbmtzdG9j/ay5qcGcud2VicA" alt="Alimentación saludable">
-                    </div>
-                    <div class="card-content">
-                        <div class="card-meta">
-                            <span class="category nutrition">Nutrición</span>
-                            <span class="date"><i class="far fa-calendar"></i> 10 Mayo 2023</span>
-                        </div>
-                        <h2><a href="#">Guía completa de proteínas para el aumento muscular</a></h2>
-                        <p class="excerpt">Todo lo que necesitas saber sobre las proteínas: tipos, cantidades recomendadas y los mejores momentos para consumirlas...</p>
-                        <div class="card-footer">
-                            <div class="author">
-                                <div class="author-avatar" data-initial="AM"></div>
-                                <span>Por Ana Martínez</span>
-                            </div>
-                            <a href="#" class="read-more">Leer más <i class="fas fa-arrow-right"></i></a>
-                        </div>
-                    </div>
-                </article>
-
-            </div>
-        </section>
+        </div>
 
         <!-- Sección de comentarios (ejemplo para un artículo) -->
         <section class="comments-section">
