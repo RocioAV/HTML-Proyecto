@@ -34,15 +34,4 @@ document.addEventListener('DOMContentLoaded', function() {
         container.textContent = initials;
     });
     
-    // Filtrado de artículos (ya funciona con CSS, esto es para mejor UX)
-    const filterInputs = document.querySelectorAll('.filter-group input');
-    
-    filterInputs.forEach(input => {
-        input.addEventListener('change', function() {
-            // Scroll suave al grid de artículos
-            document.querySelector('.blog-grid').scrollIntoView({
-                behavior: 'smooth'
-            });
-        });
-    });
 });
